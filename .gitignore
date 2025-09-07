@@ -3,6 +3,7 @@
 !.gitignore
 !README.md
 !note.md
+!articles.md
 !cp2sub.sh
 
 !*/
