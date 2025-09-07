@@ -1,4 +1,4 @@
-NAME := harl
+NAME := ex00
 
 CXX := c++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++98 -pedantic
@@ -8,7 +8,7 @@ INCDIR := incs
 OBJDIR := objs
 DEPDIR := deps
 
-SRCS := main.cpp
+SRCS := main.cpp Fixed.cpp
 
 SRCS := $(addprefix $(SRCDIR)/,$(SRCS))
 OBJS := $(SRCS:$(SRCDIR)/%.cpp=$(OBJDIR)/%.o)
