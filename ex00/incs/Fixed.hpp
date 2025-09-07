@@ -17,6 +17,4 @@ public:
   void setRawBits( int const raw );
 };
 
-
-
 #endif  // FIXED_HPP

@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "Fixed.hpp"
+#include "../incs/Fixed.hpp"
 
 int main( void ) {
     Fixed a;
