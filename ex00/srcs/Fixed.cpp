@@ -9,10 +9,9 @@ Fixed::Fixed()
 }
 
 Fixed::Fixed(const Fixed& other)
-    : _raw(0)
+    : _raw(other._raw)
 {
   std::cout << "Copy constructor called" << std::endl;
-  *this = other;
 }
 
 Fixed& Fixed::operator=(const Fixed& rhs)
