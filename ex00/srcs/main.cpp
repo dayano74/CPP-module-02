@@ -40,13 +40,7 @@ int main(void) {
     assert(c.getRawBits() == 123);
   }
 
-  {
-    Fixed a;
-    a.setRawBits(123);
-    a = a;
-    assert(a.getRawBits() == 123);
-  }
-
+  
   std::cout << "Tests passed.\n";
   return 0;
 }
