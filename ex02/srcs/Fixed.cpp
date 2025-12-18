@@ -56,8 +56,8 @@ bool Fixed::operator>(const Fixed& rhs) const { return _raw > rhs._raw; }
 bool Fixed::operator<(const Fixed& rhs) const { return _raw < rhs._raw; }
 bool Fixed::operator>=(const Fixed& rhs) const { return _raw >= rhs._raw; }
 bool Fixed::operator<=(const Fixed& rhs) const { return _raw <= rhs._raw; }
-bool Fixed::operator==(const Fixed& rhs) const { return _raw <= rhs._raw; }
-bool Fixed::operator!=(const Fixed& rhs) const { return _raw <= rhs._raw; }
+bool Fixed::operator==(const Fixed& rhs) const { return _raw == rhs._raw; }
+bool Fixed::operator!=(const Fixed& rhs) const { return _raw != rhs._raw; }
 
 Fixed Fixed::operator+(const Fixed& rhs) const {
   Fixed r;
@@ -112,7 +112,7 @@ Fixed& Fixed::min(Fixed& a, Fixed& b) {
 }
 
 const Fixed& Fixed::min(const Fixed& a, const Fixed& b) {
-  return (a._raw > b._raw) ? a : b;
+  return (a._raw < b._raw) ? a : b;
 }
 
 Fixed& Fixed::max(Fixed& a, Fixed& b) {
